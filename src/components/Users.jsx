@@ -73,7 +73,7 @@ const Users = () => {
       {!showForm && (
         <div className="my-2">
           <button
-            className="px-2 py-1 bg-gray-500 text-white rounded"
+            className="px-2 py-1 bg-black text-white rounded"
             onClick={() => setShowForm(true)}  
           >
             Add User
@@ -137,7 +137,7 @@ const Users = () => {
             {isEditing ? 'Update User' : 'Add User'}
           </button>
           <button
-            className="px-2 py-1 bg-black text-white rounded"
+            className="px-2 py-1 bg-gray-500 text-white rounded"
             onClick={resetForm} 
           >
             Cancel
@@ -149,7 +149,7 @@ const Users = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {filteredUsers.length > 0 ? (
           filteredUsers.map((user) => (
-            <div key={user.id} className="p-2 border rounded">
+            <div key={user.id} className="p-2 border rounded hover:shadow-md">
               <div className="flex items-center gap-2 mb-2 border-b pb-2">
                 <FaUserCircle className="size-8 text-gray-300" />
                 <span>
@@ -177,7 +177,7 @@ const Users = () => {
                   Edit
                 </button>
                 <button
-                  className="px-2 py-1 rounded bg-gray-400 text-white"
+                  className="px-2 py-1 rounded bg-gray-500 text-white"
                   onClick={() => handleDeleteUser(user.id)}
                 >
                   Delete
