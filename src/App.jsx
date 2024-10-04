@@ -1,11 +1,14 @@
+import Navbar from "./components/Navbar"
+import Users from "./components/Users"
+import Footer from "./components/Footer"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <p>hello user list</p>
-    </>
+    <div className="flex flex-col h-screen p-2">
+      <Navbar />
+      <Users />
+      <Footer />
+    </div>
   )
 }
 
