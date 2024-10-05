@@ -37,15 +37,13 @@ To get a local copy up and running, follow these steps:
 
     ```sh
     git clone https://github.com/your-username/user-list.git
-    cd news-app
+    cd user-list
     ```
 
 2. **Install dependencies:**
 
     ```sh
     npm install
-    # or if you prefer yarn
-    yarn install
     ```
 
 ## Usage
@@ -53,14 +51,12 @@ To get a local copy up and running, follow these steps:
 1. **Start the development server:**
 
     ```sh
-    npm start
-    # or if you prefer yarn
-    yarn start
+    npm run dev
     ```
 
 2. **Open your browser and navigate to `http://localhost:5173`**
 
-3. **Use the application to manage your transactions.**
+3. **Use the application**
 
 ## Usage
 
